@@ -10,18 +10,21 @@ import {
 import * as strings from 'TargetWebPartStrings';
 import Target from './components/Target';
 import { ITargetProps } from './components/ITargetProps';
+import * as microsoftTeams from '@microsoft/teams-js';
 
 export interface ITargetWebPartProps {
   description: string;
 }
 
 export default class TargetWebPart extends BaseClientSideWebPart<ITargetWebPartProps> {
+  private _teamsContext: microsoftTeams.Context;
 
   public render(): void {
     const element: React.ReactElement<ITargetProps > = React.createElement(
       Target,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        context: this.context
       }
     );
 

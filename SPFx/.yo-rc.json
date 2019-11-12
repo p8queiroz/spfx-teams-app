@@ -3,8 +3,8 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.9.1",
-    "libraryName": "app-target",
-    "libraryId": "e2d3b343-c6b0-41e8-8747-b731a2b57fba",
+    "libraryName": "target",
+    "libraryId": "3fea4784-c173-401d-bf1a-6cb28d9038f0",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
